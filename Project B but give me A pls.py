@@ -108,7 +108,6 @@ lvl = 0
 stop_bmg = False
 click_sound = pygame.mixer.Sound('sound/click.ogg')
 click_sound.set_volume(0.3)
-game_over_ogg = pygame.mixer.Sound('sound/game_over.ogg')
 game_start_sound = pygame.mixer.Sound('sound/game_start.ogg')
 golden_sound = pygame.mixer.Sound('sound/golden.ogg')
 purple_sound = pygame.mixer.Sound('sound/purple.ogg')
@@ -612,7 +611,6 @@ def gacha_result(events):
 
 def game_over(events) :
     global playtime, kill_count, reward, lvl, current_page
-    game_over_ogg.play()
     screen.blit(over_bg,(0,0))
     draw_text(f'level : {lvl}', 150, 300,color=(77, 63, 37),size=48)
     draw_text(f'survive time : {playtime}', 150, 400, color=(77, 63, 37),size=48)
