@@ -72,7 +72,7 @@ character_images = {
 
 roll_count, roll_countA = 0, 0
 roll_count_origin, roll_countA_origin = 0, 0
-spark_count = 190
+spark_count = 0
 storage = {}
 last10 = []  
 level_list = []
