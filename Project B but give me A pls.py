@@ -528,6 +528,7 @@ def gacha_origin(events):
 
                 current_page = "gacha_result"  
                 current_result_index = 0
+                stop_bmg = False
 
         elif bunx10_button.is_clicked(event):
             if bunbun_gem < 1600 : 
@@ -561,6 +562,7 @@ def gacha_origin(events):
 
                 current_result_index = 0  
                 current_page = "gacha_result" 
+                stop_bmg = False
 
     if stop_bmg :
         pygame.mixer.music.stop()
